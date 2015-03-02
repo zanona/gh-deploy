@@ -31,7 +31,7 @@ Having the following structure:
     └── …
 ```
 
-After running the `gh-deploy build gh-pages` the script should do its job, copy all required files to `gh-pages` directory and push the code go `gh-pages` branch. All pushes will always be incremental and do not force conflicts.
+After running the `gh-deploy build/ gh-pages/` the script should do its job, copy all required files to `gh-pages` directory and push the code go `gh-pages` branch. All pushes will always be incremental and do not force conflicts.
 
 The commit message points to the change made on the master branch for convenience.
 
@@ -46,8 +46,8 @@ The commit message points to the change made on the master branch for convenienc
         "gh-deploy": "zanona/gh-deploy"
     },
     "scripts": {
-        "build": "pakku src build",
-        "deploy": "gh-deploy build gh-pages"
+        "build": "pakku src/ build/",
+        "deploy": "gh-deploy build/ gh-pages/"
     }
 }
 ```
