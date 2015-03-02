@@ -1,0 +1,14 @@
+{
+  "name": "gh-deploy",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Sync & deploy directory to gh-pages branch",
+  "author": "Marcus Zanona <zanona@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zanona/gh-deploy.git"
+  },
+  "bin": {
+    "gh-deploy": "index.sh"
+  }
+}
