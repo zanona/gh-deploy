@@ -16,7 +16,7 @@ main () {
   git checkout gh-pages
   git pull
   cd ..
-  rsync -azP --del --exclude={.git,CNAME,README.md,circle.yml} "$from" "$to"
+  rsync -azP --del --exclude={.git,CNAME,README.md,circle.yml} --filter "P dist/*" "$from" "$to"
   cd "$to"
   git add --all ./
   git commit -m "$commit_msg"
